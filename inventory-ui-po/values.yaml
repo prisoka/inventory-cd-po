@@ -1,0 +1,10 @@
+global:
+  ingressSubdomain: garage-devtools-sfo-rhos.us-east.containers.appdomain.cloud
+  tlsSecretName: garage-devtools-sfo-rhos
+
+<app-chart-name>:
+  replicaCount: 3
+
+  ingress:
+    enabled: true
+    tlsSecretName: garage-devtools-sfo-rhos
